@@ -17,21 +17,22 @@ local Tabs = {
 }
 
 
-    Tabs.Main:AddButton({
-        Title = "Auto Parry Visual",
-        Description = "Yeah Good Auto Parry",
+    
+Tabs.Main:AddButton({
+        Title = "Auto Parry ",
+        Description = "Good auto parry,Click X For Spam and Z for Normal ",
         Callback = function()  
-getgenv().visualizer = true
+getgenv().visualizer = false
 loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/RedCircleBlock"))()
       print("Executed")         
         end
     })
-    
-Tabs.Main:AddButton({
-        Title = "Auto Parry No Visual",
-        Description = "Good auto parry but no visual",
+
+    Tabs.Main:AddButton({
+        Title = "Visual Part(can make bug)",
+        Description = "Visual part",
         Callback = function()  
-getgenv().visualizer = false
+getgenv().visualizer = true
 loadstring(game:HttpGet("https://raw.githubusercontent.com/1f0yt/community/main/RedCircleBlock"))()
       print("Executed")         
         end
